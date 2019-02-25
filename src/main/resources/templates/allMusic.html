@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Music</title>
+</head>
+<body>
+<h1>Music project list</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Project Name</th>
+        <th>Title</th>
+        <th>Option</th>
+    </tr>
+
+    <tr th:each="music : ${musicproject}">
+        <th th:text = "${music.id}">id</th>
+
+
+    </tr>
+</table>
+</body>
+</html>

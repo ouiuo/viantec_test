@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet/less" th:href="@{/webapp/assets/theme.siberia.less}"/>
+
+    <!-- The app's logic -->
+    <script type="text/javascript" data-main="/webapp/app" th:src="@{/webapp/libs/require.js}"></script>
+    <script type="text/javascript">
+        require.config({
+            paths: { text:"/webapp/libs/text" }
+        });
+    </script>
+
+    <!-- Development only -->
+    <script type="text/javascript" th:src="@{/webapp/libs/less.min.js}"></script>
+
+
+</head>
+<body>
+
+</body>
+</html>
